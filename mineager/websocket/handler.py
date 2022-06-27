@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+
 from websockets.server import WebSocketServerProtocol
 
 
