@@ -7,4 +7,6 @@ __author__ = "ooliver1"
 __license__ = "MIT"
 __title__ = "mineager"
 
+from .run import run
+
 __logging.getLogger(__name__).addHandler(__logging.NullHandler())

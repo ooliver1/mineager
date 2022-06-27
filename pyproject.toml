@@ -4,6 +4,11 @@ version = "0.0.0"
 description = "The shard and websocket manager for the Discord bot Minecat."
 authors = ["ooliver1 <oliverwilkes2006@icloud.com>"]
 license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "mineager" },
+]
+repository = "https://github.com/ooliver1/mineager"
 
 [tool.poetry.dependencies]
 python = "^3.10"
