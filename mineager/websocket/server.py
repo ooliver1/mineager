@@ -12,15 +12,13 @@ from .handler import handle
 
 if TYPE_CHECKING:
     from websockets.typing import LoggerLike
+    from websockets.server import WebSocketServer
 
-__all__ = ("run",)
+__all__ = ("run_ws",)
 stop = Future()
 
 
-async def run(
+async def run_ws(
     *, host: str, port: int, ssl: SSLContext | None, logger: LoggerLike | None
-):
-    async with serve(
-        ws_handler=handle, host=host, port=port, ssl_context=ssl, logger=logger
-    ):
-        await stop
+) -> WebSocketServer:
+    return await serve(ws_handler=handle, host=host, port=port, ssl=ssl, logger=logger)
