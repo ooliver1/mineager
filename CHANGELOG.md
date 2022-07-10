@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/ooliver1/mineager/compare/v0.1.0...v0.2.0) (2022-07-10)
+
+
+### Features
+
+* return the ctx manager for keeping server up ([d4d0266](https://github.com/ooliver1/mineager/commit/d4d026604763a9df343908db9cecde0abf183fa8))
+
 ## 0.1.0 (2022-07-08)
 
 
