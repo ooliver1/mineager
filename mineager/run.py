@@ -11,17 +11,17 @@ if TYPE_CHECKING:
     from ssl import SSLContext
 
     from websockets.typing import LoggerLike
-    from websockets.server import WebSocketServer
+    from websockets.legacy.server import Serve
 
 
 __all__ = ("run",)
 
 
-async def run(
+def run(
     *,
     host: str = "0.0.0.0",
     port: int = 6899,
     ssl: SSLContext | None = None,
     logger: LoggerLike | None = default_logger,
-) -> WebSocketServer:
-    return await run_ws(host=host, port=port, ssl=ssl, logger=logger)
+) -> Serve:
+    return run_ws(host=host, port=port, ssl=ssl, logger=logger)
