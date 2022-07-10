@@ -1,7 +1,6 @@
 # SPDX-License-Identifier: MIT
 
-from distutils.log import INFO
-from logging import Formatter, LoggerAdapter, getLogger
+from logging import Formatter, LoggerAdapter, getLogger, INFO
 from logging.handlers import TimedRotatingFileHandler
 
 __all__ = ("default_logger",)
