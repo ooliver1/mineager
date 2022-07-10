@@ -2,7 +2,7 @@
 
 import logging as __logging
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __author__ = "ooliver1"
 __license__ = "MIT"
 __title__ = "mineager"

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mineager"
-version = "0.1.0"
+version = "0.2.0"
 description = "The shard and websocket manager for the Discord bot Minecat."
 authors = ["ooliver1 <oliverwilkes2006@icloud.com>"]
 license = "MIT"
