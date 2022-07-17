@@ -6,7 +6,7 @@ from logging.handlers import TimedRotatingFileHandler
 __all__ = ("default_logger",)
 
 
-class MyAdapter(LoggerAdapter):
+class UUIDAdapter(LoggerAdapter):
     def process(self, msg, kwargs):
         try:
             websocket = kwargs["extra"]["websocket"]
@@ -18,8 +18,8 @@ class MyAdapter(LoggerAdapter):
         return f"{uuid} {xff}: {msg}", kwargs
 
 
-default_logger = getLogger("mineager.websocket")
-default_logger.setLevel(INFO)
+raw_default_logger = getLogger("mineager.websocket")
+raw_default_logger.setLevel(INFO)
 h = TimedRotatingFileHandler("./logs/mg/io.log", when="midnight")
 h.setFormatter(
     Formatter(
@@ -28,4 +28,5 @@ h.setFormatter(
     )
 )
 h.namer = lambda name: name.replace(".log", "") + ".log"
-default_logger.addHandler(h)
+raw_default_logger.addHandler(h)
+default_logger = UUIDAdapter(raw_default_logger)
