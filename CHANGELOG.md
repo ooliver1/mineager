@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/ooliver1/mineager/compare/v0.2.0...v0.3.0) (2022-07-19)
+
+
+### Features
+
+* add __main__.py ([777ba7a](https://github.com/ooliver1/mineager/commit/777ba7a4a81be74861813b864b2b7720b0637b7b))
+
+
+### Bug Fixes
+
+* **logger:** actually use the adapter for uuids ([538badb](https://github.com/ooliver1/mineager/commit/538badb8d850c0d076a194286fbde79c19d708ee))
+* use logging.INFO not disutils, thanks autoimport ([19a7fdd](https://github.com/ooliver1/mineager/commit/19a7fdd47d3b4b9db3574b46682d286414f40390))
+
 ## [0.2.0](https://github.com/ooliver1/mineager/compare/v0.1.0...v0.2.0) (2022-07-10)
 
 
